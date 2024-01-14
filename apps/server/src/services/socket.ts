@@ -17,7 +17,7 @@ class SocketService {
     public initListener(){
 
         const io = this.io;
-        console.log("Init Socker Listeners....")
+        console.log("Init Socket Listeners....")
         io.on("connect", (socket)=>{
             console.log(`New Socket Connected`, socket.id);
             socket.on('event: message', async ({message}: {message: string}) => {
