@@ -37,7 +37,7 @@ export const SocketProvider: React.FC<SocketProviderProps> = ({children}) => {
             _socket.disconnect();
             setSocket(undefined)
         }
-    }, [])
+    }, [socket])
 
     return (
         <SocketContext.Provider value={{sendMessage}}>
